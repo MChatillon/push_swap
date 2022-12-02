@@ -1,40 +1,53 @@
-SRCS		=	srcs/main.c \
-				srcs/push.c \
-				srcs/swap.c \
-				srcs/rotate.c \
-				srcs/rev_rotate.c \
 
-OBJS		= $(subst srcs/, $(PATH_OBJS), $(SRCS.c=.o))
+SRCS		=	$(SRCS_DIR)/main.c\
+				$(SRCS_DIR)/exit_prog.c\
+				$(SRCS_DIR)/parse.c\
+				$(SRCS_DIR)/push.c\
+				$(SRCS_DIR)/rotate.c\
+				$(SRCS_DIR)/rev_rotate.c\
+				$(SRCS_DIR)/swap.c\
+				$(SRCS_DIR)/utils.c\
+				$(SRCS_DIR)/algorythm.c\
+				$(SRCS_DIR)/radix.c\
 
-PATH_OBJS	= objs/
+SRCS_DIR	= srcs
 
-FT_PRINTF	=	ft_printf/libftprintf.a
-LIBFT 		=	libft/libft.a
-CC			=	gcc
-RM 			=	rm -rf
-CFLAGS 		=	-g -Wall -Werror -Wextra -fsanitize=address
+OBJS		= $(subst $(SRCS_DIR), $(OBJS_DIR), $(SRCS:.c=.o))
 
-NAME		=	push_swap
+OBJS_DIR	= objs
 
-all			=	$(NAME)
+LIBFT		= libft/libft.a
+FT_PRINTF	= ft_printf/libftprintf.a
+CC			= gcc
+CFLAGS		= -g -Wall -Werror -Wextra -fsanitize=address
+RM			= rm -fr
+NAME		= push_swap
+
+all: $(NAME)
 
 $(LIBFT):
-				make -C libft
+	make bonus -C libft
 
 $(FT_PRINTF):
-				make -C ft_printf
+	make -C ft_printf
 
-$(PATH_OBJS)%.o: srcs/%.c
-		mkdir -p $(@D)
+$(OBJS_DIR)/%.o: $(SRCS_DIR)/%.c
+	mkdir -p $(OBJS_DIR)
+	$(CC) $(CFLAGS) -I/usr/headers -c $< -o $@
 
-$(NAME):		$(OBJS)
-				$(CC) $(CFLAGS) $(OBJS) $(NAME)
+$(NAME):	$(LIBFT) $(FT_PRINTF) $(OBJS)
+	$(CC) $(CFLAGS) $(OBJS) -Llibft -lft -Lft_printf -lftprintf -o $(NAME)
 
-clean:			$(RM) $(PATH_OBJS)
+clean:
+			$(RM)	$(OBJS)
+			make clean -C libft
+			make clean -C ft_printf
 
-fclean:			clean
-				$(RM) $(NAME)
+fclean:	clean
+			$(RM)	$(NAME) $(OBJS_DIR)
+			make fclean -C libft
+			make fclean -C ft_printf
 
-re:				fclean $(NAME)
+re:	fclean all
 
-.PHONY:			all clean fclean re
+.PHONY: fclean all re clean
