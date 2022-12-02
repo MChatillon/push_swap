@@ -6,7 +6,7 @@
 /*   By: mdoroana <mdoroana@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/03 12:21:08 by mdoroana          #+#    #+#             */
-/*   Updated: 2022/03/29 17:31:53 by mdoroana         ###   ########.fr       */
+/*   Updated: 2022/11/29 18:00:17 by mdoroana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,6 @@
 
 static int	ft_conversion(const char *str, int i, va_list *args)
 {
-	int	counter;
-
-	counter = 0;
 	if (str[i] == 'c')
 		return (ft_putchar(va_arg(*args, int)));
 	if (str[i] == 's')
