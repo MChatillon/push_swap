@@ -6,7 +6,7 @@
 /*   By: mdoroana <mdoroana@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/22 17:39:05 by mdoroana          #+#    #+#             */
-/*   Updated: 2022/12/02 19:53:44 by mdoroana         ###   ########.fr       */
+/*   Updated: 2022/12/05 17:54:22 by mdoroana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ int	main(int ac, char **av)
 	if (ac <= 1)
 		print_msg(0, &a);
 	parse_args(av, &a);
+	if (is_sorted(a))
+		print_msg(0, &a);
 	set_index(&a);
 	if (ft_lstsize(a) == 2)
 		algo2(&a);
@@ -31,7 +33,7 @@ int	main(int ac, char **av)
 		algo4(&a, &b);
 	if (ft_lstsize(a) == 5)
 		algo5(&a, &b);
-	else
+	else if (ft_lstsize(a) > 5)
 		radix_sort(&a, &b);
 	print_msg(0, &a);
 	return (0);
