@@ -6,7 +6,7 @@
 /*   By: mdoroana <mdoroana@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/02 17:13:33 by mdoroana          #+#    #+#             */
-/*   Updated: 2022/12/02 19:48:25 by mdoroana         ###   ########.fr       */
+/*   Updated: 2022/12/05 17:56:51 by mdoroana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@ static void	is_max(int *max, t_list *a)
 {
 	while (a)
 	{
-		if (a->data > *max)
-			*max = a->data;
+		if (a->index > *max)
+			*max = a->index;
 		a = a->next;
 	}
 }
@@ -67,7 +67,7 @@ void	radix_sort(t_list **a, t_list **b)
 	t_list	*tmp;
 
 	max_bits = find_max_bits(a);
-	i = 0;
+	i = -1;
 	while (++i < max_bits)
 	{
 		size = ft_lstsize(*a);
