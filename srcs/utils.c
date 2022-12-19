@@ -6,7 +6,7 @@
 /*   By: mdoroana <mdoroana@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 20:47:19 by mdoroana          #+#    #+#             */
-/*   Updated: 2022/12/19 15:52:22 by mdoroana         ###   ########.fr       */
+/*   Updated: 2022/12/19 16:02:56 by mdoroana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 int	is_sorted(t_list *a)
 {
+	if (!a)
+		return (0);
 	while (a->next)
 	{
 		if (a->data > a->next->data)

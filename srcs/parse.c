@@ -6,7 +6,7 @@
 /*   By: mdoroana <mdoroana@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/29 15:37:50 by mdoroana          #+#    #+#             */
-/*   Updated: 2022/12/19 15:52:04 by mdoroana         ###   ########.fr       */
+/*   Updated: 2022/12/19 16:04:04 by mdoroana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,6 +63,8 @@ void	parse_args(char **av, t_list **a)
 	while (av[++i])
 	{
 		s = av[i];
+		if (!*s)
+			print_msg(1, a);
 		while (*s)
 		{
 			while ((*s >= 9 && *s <= 13) || *s == 32)
