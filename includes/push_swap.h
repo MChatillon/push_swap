@@ -3,19 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mdoroana <mdoroana@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: mdoroana <mdoroana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/22 17:01:54 by mdoroana          #+#    #+#             */
-/*   Updated: 2022/12/02 19:00:38 by mdoroana         ###   ########.fr       */
+/*   Updated: 2023/01/10 16:44:27 by mdoroana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
 
-# include <stdio.h>
-# include <unistd.h>
-# include <stdlib.h>
 # include "../libft/libft.h"
 # include "../ft_printf/ft_printf.h"
 # include <limits.h>
