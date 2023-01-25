@@ -33,7 +33,7 @@ $(FT_PRINTF):
 
 $(OBJS_DIR)/%.o: $(SRCS_DIR)/%.c
 	mkdir -p $(OBJS_DIR)
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -I includes -I ft_printf/ -I libft/ -c $< -o $@
 
 $(NAME):	$(LIBFT) $(FT_PRINTF) $(OBJS)
 	$(CC) $(CFLAGS) $(OBJS) -Llibft -lft -Lft_printf -lftprintf -o $(NAME)
