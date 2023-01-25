@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mdoroana <mdoroana@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: mdoroana <mdoroana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/22 17:39:05 by mdoroana          #+#    #+#             */
-/*   Updated: 2022/12/05 17:54:22 by mdoroana         ###   ########.fr       */
+/*   Updated: 2023/01/25 16:07:12 by mdoroana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/push_swap.h"
+#include "push_swap.h"
 
 int	main(int ac, char **av)
 {

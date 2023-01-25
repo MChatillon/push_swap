@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   push.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mdoroana <mdoroana@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: mdoroana <mdoroana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/28 19:22:03 by mdoroana          #+#    #+#             */
-/*   Updated: 2022/12/01 19:06:18 by mdoroana         ###   ########.fr       */
+/*   Updated: 2023/01/25 16:07:20 by mdoroana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/push_swap.h"
+#include "push_swap.h"
 
 void	push_a(t_list **a, t_list **b)
 {

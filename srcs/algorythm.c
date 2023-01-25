@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   algorythm.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mdoroana <mdoroana@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: mdoroana <mdoroana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 20:35:58 by mdoroana          #+#    #+#             */
-/*   Updated: 2022/12/19 15:52:12 by mdoroana         ###   ########.fr       */
+/*   Updated: 2023/01/25 16:05:30 by mdoroana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/push_swap.h"
+#include "push_swap.h"
 
 void	algo2(t_list **a)
 {

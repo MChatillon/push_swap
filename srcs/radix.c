@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   radix.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mdoroana <mdoroana@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: mdoroana <mdoroana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/02 17:13:33 by mdoroana          #+#    #+#             */
-/*   Updated: 2022/12/19 15:51:58 by mdoroana         ###   ########.fr       */
+/*   Updated: 2023/01/25 16:07:24 by mdoroana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/push_swap.h"
+#include "push_swap.h"
 
 static void	is_max(int *max, t_list *a)
 {
