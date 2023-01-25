@@ -6,15 +6,15 @@
 /*   By: mdoroana <mdoroana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/22 17:01:54 by mdoroana          #+#    #+#             */
-/*   Updated: 2023/01/10 16:44:27 by mdoroana         ###   ########.fr       */
+/*   Updated: 2023/01/25 16:07:00 by mdoroana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
 
-# include "../libft/libft.h"
-# include "../ft_printf/ft_printf.h"
+# include "libft.h"
+# include "ft_printf.h"
 # include <limits.h>
 
 int		ps_atoi(char **str, t_list **a);
