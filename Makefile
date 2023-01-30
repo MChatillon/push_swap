@@ -18,7 +18,7 @@ OBJS_DIR	= objs
 
 LIBFT		= libft/libft.a
 FT_PRINTF	= ft_printf/libftprintf.a
-CC			= gcc
+CC			= cc
 CFLAGS		= -g -Wall -Werror -Wextra -fsanitize=address
 RM			= rm -fr
 NAME		= push_swap
